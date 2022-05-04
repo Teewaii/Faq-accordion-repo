@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@200;400;600&family=Roboto:wght@100;300;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --SoftRed: hsl(14, 88%, 65%);
+    --SoftViolet: hsl(273, 75%, 66%);
+    --SoftBlue: hsl(240, 73%, 65%);
+
+    --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --SoftRed: hsl(14, 88%, 65%);
+    --Lightgrayishblue_Divider: hsl(240, 5%, 91%);
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    Font-size: 13px;
+    background-image: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container {
+    border: 1px solid yellow;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    width: 70vw;
+}
+
+.accordion {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 1.3rem;
+    margin-top: -2.5rem;
+    height: 58vh;
+    min-width: 300px;
+}
+
+.accordion h1 {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
+.hero img {
+    width: 190px;
+    position: relative;
+    top: 1.5rem;
+}
+
+.hero-shadow img {
+    position: absolute;
+    width: 200px;
+    top: 8rem;
+    left: 9rem;
+    /* transform: translate(-50%); */
+}
+
+.accordion-items {
+
+    padding: 1rem;
+
+}
+
+.accordion-header {
+    padding-bottom: 1rem;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.accordion-header img {
+    position: absolute;
+    height: 6px;
+    width: 9px;
+    right: .5rem;
+    top: .3rem;
+
+}
+
+.accordion-item-body {
+    padding-top: .5rem;
+    /* padding-bottom: .5rem; */
+    border-top: 1.5px solid var(--Lightgrayishblue_Divider);
+}
+
+.accordion-item-body {
+    height: 0;
+    overflow: hidden;
+}
