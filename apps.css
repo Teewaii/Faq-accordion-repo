@@ -23,10 +23,11 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     Font-size: 14px;
     background-image: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    
 }
 
 .container {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -125,24 +126,38 @@ body {
 } */
 
 @media (min-width:600px) {
+    body{
+        height: 100vh;
+    }
     .container {
- 
+ background-color: red;
     padding: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: auto;
-    height: 100vh;
-    width: 70vw;
+    justify-content: space-between;
+    margin: 8rem auto;
+    max-height: 58vh;
+    max-width: 50vw;
 }
-
-.accordion {
+ .accordion {
     background-color: white;
-    padding: .5rem;
     border-radius: 1.3rem;
     margin-top: -2.5rem;
     max-height: 58vh;
-    min-width: 300px;
+    max-width: 55%;
 }
 
+/* .accordioon .accordion-items{
+    width: 100%;
+    border: 1px solid rgb(226, 15, 43);
+}
+
+}  */
+
+
+.accordion h1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.5rem;
 }
